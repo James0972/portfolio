@@ -1,7 +1,7 @@
 # Site settings
-title: My Awesome Site
+title: My Data Science Portfolio
 description: > # this means to ignore newlines until "baseurl:"
-  Welcome to my awesome site. Here you'll find all sorts of interesting content.
+  Welcome to my data science portfolio. Here you'll find my projects, blog posts, and more.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yourusername.github.io" # the base hostname & protocol for your site
 
@@ -18,10 +18,13 @@ author:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
 
 # Social media settings
 twitter_username: your_twitter_username
 github_username: your_github_username
+linkedin_username: your_linkedin_username
 
 # Exclude from processing
 exclude:
@@ -40,3 +43,19 @@ paginate_path: "/page:num/"
 # Custom variables
 custom_variable: "This is a custom variable"
 
+# Navigation links
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "About"
+    url: "/about/"
+
+# Google Analytics
+google_analytics: "UA-XXXXXXXX-X"
+
+# Disqus comments
+disqus_shortname: "your_disqus_shortname"
